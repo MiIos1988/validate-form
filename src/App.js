@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import FormImputs from "./components/FormImputs";
 
+//sajt https://www.youtube.com/watch?v=tIdNeoHniEY&t=101s
+
 function App() {
   const [values, setValues] = useState({
     username: "",
