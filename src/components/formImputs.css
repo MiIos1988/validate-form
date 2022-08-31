@@ -1,0 +1,31 @@
+input {
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 1rem;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.formImput {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  font-size: 1rem;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: silver;
+  color: white;
+}
+span {
+  color: red;
+  font-size: 1rem;
+  display: none;
+}
+input:invalid ~ span {
+  display: block;
+}
