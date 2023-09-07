@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./App.css";
 import FormImputs from "./components/FormImputs";
 
-//sajt https://www.youtube.com/watch?v=tIdNeoHniEY&t=101s
 
 function App() {
   const [values, setValues] = useState({
@@ -10,7 +9,7 @@ function App() {
     email: "",
     birthday: "",
     password: "",
-    comfirmPassword: "",
+    confirmPassword: "",
   });
 
   const inputs = [
@@ -20,7 +19,7 @@ function App() {
       type: "text",
       placeholder: "Username",
       label: "Username",
-      errorMesage: "Username must be 3 - 30 characters",
+      errorMessage: "Username must be 3 - 30 characters",
       require: true,
     },
     {
@@ -28,8 +27,8 @@ function App() {
       name: "email",
       type: "email",
       placeholder: "Email",
-      label: "Emali",
-      errorMesage: "email must be  valid",
+      label: "Email",
+      errorMessage: "email must be  valid",
       require: true,
     },
     {
@@ -45,16 +44,16 @@ function App() {
       type: "password",
       placeholder: "Password",
       label: "Password",
-      errorMesage: "password must be longer than 5 characters",
+      errorMessage: "password must be longer than 5 characters",
       require: true,
     },
     {
       id: 5,
-      name: "comfirmPassword",
+      name: "confirmPassword",
       type: "password",
-      placeholder: "Comfirm Password",
-      label: "Comfirm Password",
-      errorMesage: "password was not repeated",
+      placeholder: "Confirm Password",
+      label: "Confirm Password",
+      errorMessage: "password was not repeated",
       require: true,
     },
   ];

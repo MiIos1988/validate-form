@@ -2,7 +2,6 @@ import React from "react";
 import "./formImputs.css";
 
 const FormImputs = ({ input, value, onchange }) => {
-  // const { label, onChange, id, ...inputProps } = props;
   return (
     <div className="formImput">
       <label>{input.label}</label>
@@ -14,7 +13,7 @@ const FormImputs = ({ input, value, onchange }) => {
         onChange={onchange}
         required
       />
-      <span>{input.errorMesage}</span>
+      <span>{input.errorMessage}</span>
     </div>
   );
 };
